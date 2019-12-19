@@ -1,6 +1,14 @@
-## Hello world
-this is the first
-
- $a+b$
----
-# shouw us the code
+# 这是用于表示如何在Vscode中使用markdown
+### 使用办法
+* 创建文件后缀名为md
+* 在vscode 中加入插件：markdownlint，用于检测语法
+* 在vscode 中加入插件：Markdown all in one 实现快捷键
+* 在文件的右上角有一个预览的按钮
+* 在markdown中可以实现latex代码
+### 使用事项
+- 1. markdown可以实现与latex代码的填入，使用美元符号就可以实现代码的变化
+ 比如如下效果：
+>  \$a+b\$
+>>    $a+b$
+- 2. *,-等符号，可以用于表示开头的编码着重号
+- 3. Tab键可以实现代码不变形
