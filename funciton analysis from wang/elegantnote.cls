@@ -230,6 +230,14 @@
 \tikzstyle{newdefinitionstytitle} 
          =[fill=main, text=white]
          
+ \tikzstyle{newexamplesty} 
+         =[draw=main, fill=yellow!20,very thick,rectangle,
+          rounded corners, inner sep=10pt, inner ysep=20pt,
+          text=black,fill opacity=0.9]
+\tikzstyle{newexamplestytitle} 
+        =[fill=main, text=white]
+
+         
 \tikzstyle{newpropositionsty} 
           =[draw=thid, fill=bablue,very thick,rectangle,
            rounded corners, inner sep=10pt, inner ysep=20pt,
@@ -314,7 +322,17 @@
 \end{tikzpicture}
 }[\par\vspace{.5\baselineskip}]
 
-
+%%define the "newex" environment
+\newcounter{Newexample}[chapter]
+\renewcommand{\theNewexample}{\thechapter.\arabic{Newexample}}
+\NewEnviron{newex}[1][{}]{%
+\noindent\centering
+\begin{tikzpicture}
+\node [newexamplesty] (dbox){\begin{minipage}{0.93\textwidth}\itshape\BODY\end{minipage}};
+\node[newexamplestytitle, right=10pt] at (dbox.north west) {\bf\textsf{Example \stepcounter{Newexample}\theNewexample\; #1}};
+\node[newexamplestytitle, rounded corners] at (dbox.east) {$\heartsuit$};
+\end{tikzpicture}
+}[\par\vspace{.5\baselineskip}]
 
 %%define the note and newproof environment
 \RequirePackage{pifont,manfnt}
