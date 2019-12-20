@@ -6,14 +6,19 @@
    
 >2. 下标放于下方\
     解决办法：\
-     1) 使用代码\$limits_{}\$位于需要的后面 例如:
-      >> \$\sum \limits_{k=1}^n\$ 
-      >>>  $\sum \limits_{k=1}^n$
-
+     1) 使用代码\$limits_{}\$位于需要的后面 但只能对公式这么做.例如:
+     2) 使用\underset。注意\underset 尽量一个嵌套，多个嵌套会出错. 
+     3) \inf \sup 其使用\inf_n时，n会位于下方（latex语法与markdown中不同）
+      >> \$\sum \limits_{k=1}^n\$ \
+      >> \$ \inf _n \$
+      >>>  $\sum \limits_{k=1}^n$ \
+      >>> $\inf \limits_{n}$
 >3. 如何自定义编号\
      解决办法：\
       1) 构造环境 gather 、align*等等
       2) 使用标签\tag\*{...}
+      3) \notag 可以去除该行编号
+      4) align 环境下，不要空行
        >>  \begin{align}\
        \big(\sum \limits_{k=1}^n a_k b_k \big)^2 \leqslant \sum \limits_{k=1}^n a_k^2 \cdot \sum \limits_{k=1}^n b_k^2 \
     \end{align}
@@ -31,3 +36,9 @@
       >> \DeclareMathOperator\dif{d\!}
       >>  \$\dif x\$
        >>> $\mathrm{d} x$
+>6. 反斜杠
+     解决办法：\
+      1) \backslash
+        >> \$ \backslash\$
+        >>> $\backslash$
+>7. 交叉引用问题
