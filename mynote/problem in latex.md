@@ -24,3 +24,10 @@
       2) 使用\mbox{} 插入
        >> \$ a \mbox{是1}\$
        >>> $a 是1$
+>5. 积分中的求导符
+     解决办法：\
+      1） 使用\dif
+      2） 使用\mathrm
+      >> \DeclareMathOperator\dif{d\!}
+      >>  \$\dif x\$
+       >>> $\mathrm{d} x$
