@@ -15,9 +15,9 @@
 \begin{newex}
 	\textbf{$n$维欧式空间 $\mathbb R ^n$}
 	其上的距离为：
-	\begin{align}
+	\begin{equation}
 		\rho (x, \ y)=\big( \sum\limits_{k=1}^n | \xi_k- \eta_k|^2 \big)^{1/2} \label{eq:rho1}
-	\end{align}
+	\end{equation}
 \end{newex}
 
 \begin{note}
@@ -36,16 +36,16 @@
 \begin{newex}
 	空间$C[a,\ b]$
 	\begin{align}
-        \rho(x, \ y)=\max\limits_{a \leqslant t \leqslant b} |x(t)-y(t)|
-        \label{eq:rho3}
+		\rho(x, \ y)=\max\limits_{a \leqslant t \leqslant b} |x(t)-y(t)|
+		\label{eq:rho3}
 	\end{align}
 \end{newex}
 
 \begin{newex}
 	$L^p(F) \ (1 \leqslant p < \infty , \ F \subset \mathbb R , \mbox{且为可测集})$\
 	\begin{align}
-        \rho (x , \ y)= \big( \int_{F} |x(t)-y(t)|^p \dif t \big)^{1/p}
-        \label{eq:rho4}
+		\rho (x , \ y)= \big( \int_{F} |x(t)-y(t)|^p \dif t \big)^{1/p}
+		\label{eq:rho4}
 	\end{align}
 \end{newex}
 \begin{note}
@@ -126,22 +126,22 @@
 
 \begin{note}
 	1. $\mathbb R^n$中的收敛，其中的点列$\{ x^{(m)}\} = \{  (\xi_1^{(m)},\ \xi_2^{(m)},\ \cdots , \ \xi_n^{(m)}) \}$
-	按照等式(\ref{eq:rho1})或按照等式(\ref{eq:rho1'})定义的距离收敛于$x = (\xi_1, \ \xi_2 , \ \cdots , \ \xi_n)$
+	按照等式(\eqref{eq:rho1})或按照等式(\ref{eq:rho1'})定义的距离收敛于$x = (\xi_1, \ \xi_2 , \ \cdots , \ \xi_n)$
 	的充分必要条件均为$x ^{(m)}$的每个坐标收敛于$x$的相应坐标。
-    2. 对于$C[a,b]$，按照距离(\ref{eq:rho3})其中点列$\{ x_n\}$收敛于点$x_0$的充分必要条件是
-    ：作为函数列的$\{x_n(\  \cdot\  )\}$在$\left[ a,b \right]$上一致收敛于函数$x_0(\ \cdot \ )$。
-    3. 在$C[a,b]$中，并不是所有距离下的收敛都和一致收敛等价，如定义
-    $$\rho_1(x,\ y)=\big(  \int_a^b |x(t)-y(t)|^2 \dif d t   \big)^{1/2}$$
-    取函数列$$x_n(t)=\dfrac{1}{(b-a)^n}(t-a)^n \quad \left(  t \in \left[a,\ b \right],\ n=1,\ 2, \cdots \right) $$
-    可知道,按照$\rho_1$，其收敛于0，而显然，它并不是一致收敛的(其在1附近总不一致收敛)
+	2. 对于$C[a,b]$，按照距离(\ref{eq:rho3})其中点列$\{ x_n\}$收敛于点$x_0$的充分必要条件是
+	：作为函数列的$\{x_n(\  \cdot\  )\}$在$\left[ a,b \right]$上一致收敛于函数$x_0(\ \cdot \ )$。
+	3. 在$C[a,b]$中，并不是所有距离下的收敛都和一致收敛等价，如定义
+	$$\rho_1(x,\ y)=\big(  \int_a^b |x(t)-y(t)|^2 \dif d t   \big)^{1/2}$$
+	取函数列$$x_n(t)=\dfrac{1}{(b-a)^n}(t-a)^n \quad \left(  t \in \left[a,\ b \right],\ n=1,\ 2, \cdots \right) $$
+	可知道,按照$\rho_1$，其收敛于0，而显然，它并不是一致收敛的(其在1附近总不一致收敛)
 \end{note}
 
 \begin{note}
-    \begin{itemize}
-        \item [(i)] 对于任何一个非空集合，我们都可以定义距离。但是一般来说，我们应当根据该集合的特点适当地引进距离以充分反映这些
-        特点。例如，对$C[a,\ b]$，我们常常用等式(\ref{eq:rho3})定义距离；对于$L^p(F)$我们常用等式(\ref{eq:rho4})定义距离，等等。只有这样，在理论和实践上才有意义。
-        \item [(ii)] 定义距离的方式一般不说唯一。
-        \item [(iii)] 如果一个非空集合中定义了两个或两个以上的距离，那么由它们导出的收敛可以等价也可以不等价。当不等价时，便得到本质
-        上不同的两个或两个以上的距离空间。
-    \end{itemize}
+	\begin{itemize}
+		\item [(i)] 对于任何一个非空集合，我们都可以定义距离。但是一般来说，我们应当根据该集合的特点适当地引进距离以充分反映这些
+		      特点。例如，对$C[a,\ b]$，我们常常用等式(\ref{eq:rho3})定义距离；对于$L^p(F)$我们常用等式(\ref{eq:rho4})定义距离，等等。只有这样，在理论和实践上才有意义。
+		\item [(ii)] 定义距离的方式一般不说唯一。
+		\item [(iii)] 如果一个非空集合中定义了两个或两个以上的距离，那么由它们导出的收敛可以等价也可以不等价。当不等价时，便得到本质
+		      上不同的两个或两个以上的距离空间。
+	\end{itemize}
 \end{note}

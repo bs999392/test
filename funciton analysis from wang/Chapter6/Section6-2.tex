@@ -1,0 +1,190 @@
+\begin{newdef}
+    距离空间
+    \begin{align}
+        \{x \colon \rho( x,\ x_0) \ <r\} \quad (r >0)
+    \end{align}
+    称为以$x_0$为中心，以$r$为半径的开球，也可表示为$S(x_0, \ r)$，也叫做$x_0$的一个球形邻域，或简称邻域。\
+    距离空间
+    \begin{align*}
+        \{x \colon \rho( x,\ x_0) \ \leqslant  r\} \quad (r >0)
+    \end{align*}
+    称为以$x_0$为中心，以$r$为半径的闭球，也可表示为$\bar{S}(x_0, \ r)$，也叫做$x_0$的一个球形邻域，或简称邻域。
+\end{newdef}
+
+\begin{newdef}
+    设$X$是一个距离空间，$G \subset X,\ x\in G.$如果存在$x$的某个邻域$S(x,\ r)\subset G$，则称$x$是$G$的内点。\ 
+    $G$的全部内点构成的集合记为$G^0$，称为$G$的内部.\
+    如果$G$中的每一个点都是它的内点，则称$G$为开集，空集规定为开集。
+\end{newdef}
+\begin{note}
+    \begin{itemize}
+        \item [1.] 如果$x$集合$A\subset X (A \mbox{未必是开集})$的内点，我们也称$A$是$x$的一个邻域。
+    \end{itemize}
+\end{note}
+
+\begin{newthem}
+    设$x$是距离空间，则\ 
+    \begin{itemize}
+        \item [(i)]空间$X$与空集$\emptyset$都是开集；
+        \item [(ii)]任意多个开集的并是开集；
+        \item [(iii)]有限多个开集的交是开集
+    \end{itemize}
+\end{newthem}
+
+\begin{newdef}
+    设$X$是距离空间，$A \subset X$。点$x_0 \in X$。弱队任给的$\epsilon >0 $，$x_0$的邻域$S(x_0,\ \epsilon)$中含有
+    $A$中异于$x_0$的点，即$$S(x_0,\ \epsilon) \cap (A \backslash \{ x_0\}) \neq \emptyset$$
+    则称$x_0$是$A$的聚点或极限点。\ 
+    如果$x_0 \in A$但不是$A$的聚点，则称$x_0$为$A$的孤立点。\ 
+    集合$A$的全部聚点构成的集合称为$A$的导集。记为$A'$\ 
+    并集$A \cup A'$称为$A$的闭包,记为$\bar{A}$。如果$A=\bar{A} $，则称$A$为闭集。
+\end{newdef}
+
+\begin{newex}
+    \begin{itemize}
+        \item [1.] 设$A=\big\{1,\ \dfrac{1}{2},\ \cdots ,\ \dfrac{1}{n}   \big\}$距离为$\rho (x,\ y)=|x-y|$。0是聚点，但不在$A$中。
+        \item [2.] 设$B$是区间$\left( 0,\ 1  \right]$，距离为$\rho (x,\ y)=|x-y|$，0是聚点，但不在其中。
+    \end{itemize}
+    因此聚点可以是内点，也可以不是内点。
+\end{newex}
+
+\begin{newex}
+    设$A=\left\{  0,\ 1,\ 2,\ \cdots ,\ n,\ cdots  \right\}$，$\rho(x,\ y)=|x-y|$\ 
+    $A$中的一切点都是它的孤立点，同时也是内点，内点和孤立点并不互斥。
+\end{newex}
+
+\begin{newthem}
+    \begin{itemize}
+        \item [(i)] $A \subset \bar{A}$
+        \item [(ii)] $\bar{\bar{A}}=\bar{A}$
+        \item [(iii)] $\overline{A \cup B}=\bar{A} \cup \bar{B}$
+        \item [(iv)] $\bar{\emptyset }= \emptyset$ 
+    \end{itemize}
+\end{newthem}
+
+\begin{newthem}
+    设$X$为距离空间，则
+    \begin{itemize}
+        \item [(i)]空间$X$及空集$\emptyset$都是闭集；
+        \item [(ii)] 任意多个闭集的交是闭集；
+        \item [(iii)] 有限多个闭集的并是闭集。
+    \end{itemize}
+\end{newthem}
+
+\begin{newex}
+    设$X$为一离散的距离空间，则$X$中的每个点既为它的内点，也是它的孤立点，因此$X$的每个子集都是既开又闭的集。
+\end{newex}
+
+\begin{newdef}
+    设$A,\ B$均为距离空间$X$的子集，如果$\bar{B} \supset A$，则称$B$在$A$中稠密.\\
+    其有等价命题如下：
+    \begin{itemize}
+        \item [(i)] 对于任给的$x \in A$以及任给的$\varepsilon >0$，存在$B$中的点$y$使$\rho (x, \ y) <\varepsilon$
+        \item [(ii)] 对于任给的$\varepsilon >0$,以$B$中的每个点为中心，以$\varepsilon$为半径的全部开球的并包含$A$
+        \item [(iii)] 对于任给的$x \in A$，存在$B$中的点列$ \left\{ x_n \right\}$收敛于$x$
+    \end{itemize}
+\end{newdef}
+
+\begin{note}
+    在稠密集的定义中，并不要求$ B \subset A$，$B$和$A$甚至可以没有交集
+\end{note}
+
+\begin{newdef}
+    设$X$为距离空间，若$X$存在稠密的可列子集，则称$X$可分.
+\end{newdef}
+
+\begin{newex}
+    \begin{itemize}
+        \item [(i)] $\mathbb R^n$是可分的，因为$\mathbb{ R}^n$中的坐标为有理数的点构成的集是$\mathbb{R}^n$的一个可列稠密子集
+        \item [(ii)] 空间$C[a , \ b]$是可分的（因为可以利用伯恩斯坦定理证明：有理系数的多项式构成的集$P_n$在$C[a,\  b]$中稠密，而$P_0$是可列集
+        \item [(iii)] 空间$L^p(F)\ (p \geqslant 1)$ 是可分的。
+    \end{itemize}
+\end{newex}
+
+\begin{newex}
+    $L^\infty \left[a, \ b\right]$是不可分的距离空间。设$A$是由如下的函数
+   \begin{equation*}
+       x_s(t)=
+       \begin{cases}
+           1， & a\leqslant t \leqslant s.\\
+           0,  & s < t \leqslant b
+       \end{cases} \qquad
+       (s \in \left[a,\ b\right])
+ \end{equation*}
+\end{newex}
+
+\begin{newdef}
+    设$X,\ Y$都是距离空间，距离分别为$\rho, \ \rho_1$。如果对每一个$x \in X$，按照某个规律必有$Y$中唯一的$y$与之相对应，
+    则称这个对应是一个\textbf{映射}。映射常用记号$T$来表示。据此，我们有$Tx=y$。\\
+    如果对于某一给定的点$x_0 \in X$，映射$T$满足下面的条件：对任给的$ \varepsilon >0$，存在$\delta >0$，使得当$\rho (x,\ x_0)<\delta$
+    时，有$\rho_1(Tx,\ Tx_0)<\varepsilon$，则称映射$T$在点$x_0$处\textbf{连续}。如果映射$T$在$X$中的每一点处都连续，
+    则称$T$在\textbf{$X$上连续}，且称$T$是\textbf{连续映射}
+\end{newdef}
+
+\begin{newdef}
+    设$T$是由距离空间$X$到距离空间$Y$的映射，$A \subset X$。称集合
+    $$\left\{ Tx \colon x \in A \right\} $$
+    为集合$A$的\textbf{像},记为$T(A)$。设$B \subset Y$，则称集合$$\left\{ x \colon Tx \in B \right\}$$
+    为集合$B$的原像，记为$T^{-1}(B)$。
+\end{newdef}
+
+\begin{newex}
+    设$X$是距离空间，以$\rho$为距离，$x_0 \in X$为任一给定点，则$f(x)=\rho (x,\ x_0)$是$X$到$\mathbb R$的连续映射
+    将所有由距离空间$X$到实（或复数域）的映射称为\textbf{泛函}，
+\end{newex}
+
+\begin{newthem}
+    距离空间$X$到距离空间$Y$中的映射$T$在点$x_0 \in X$连续的充分必要条件是对任何收敛于$x_0$的点列$\left\{x_n\right\}\subset X$，
+    有$\left\{Tx_n\right\}$收敛于$Tx_0$
+\end{newthem}
+\begin{note}
+    \begin{itemize}
+        \item [(i)]其将点处$T$收敛$\Leftrightarrow$考察收敛$x_0$点列像的收敛
+    \end{itemize}
+\end{note}
+\begin{newthem}
+    距离空间$X$到距离空间$Y$中的映射$T$连续的充分必要条件是下列两个条件之一成立：
+    \begin{itemize}
+        \item [(i)] 对于$Y$中的任一开集$G$，$G$的原像$T^{-1} (G)$是$X$中的开集
+        \item [(ii)] 对于$Y$中的任一闭集$F$，$G$的原像$T^{-1} (F)$是$X$中的闭集
+    \end{itemize}
+\end{newthem}
+\begin{note}
+    \begin{itemize}
+        \item [(i)] (ii)和(i)可从余集的角度直接证明
+        \item [(ii)] 证明中，可运用连续定义，构造合适的开球，包含点的像
+    \end{itemize}
+\end{note}
+
+\begin{newdef}
+    设$T$是由距离空间$X$到距离空间$Y$的单映射，即对任意的$x_1,\ x_2 \in X$，当$x_1 \neq x_2$时，$Tx_1 \neq Tx_2$。\\
+    今再设$T$为满映射,即$T(x)=Y$，于是对任一$y \in Y$，必存在唯一的$x \in X$使得
+    \begin{align}
+        Tx=y
+        \label{eq:6}
+    \end{align}
+    因此通过$\eqref{eq:6}$我们得到一个新的映射，它将$y$映成$x$，称这个映射为$T$的\textbf{逆映射}，记为$$T^{-1}y=x$$
+    当$T$存在逆映射时，称$T$是\textbf{可逆的}。\\
+    因此，$T$存在逆映射的充分必要条件是$T$既为单映射又为满映射。它统称既单又满的映射为双映射。单映射又称为一对一映射
+\end{newdef}
+\begin{newdef}
+    设$X,\ Y$为距离空间，距离分别为$\rho ,\ \rho_1$，又设$T$是由$X$到$Y$的映射。若$T$存在逆映射，且$T$及其逆映射$T^{-1}$
+    均连续，则称$T$是$X$到$Y$上的\textbf{同胚映射}.如果存在一个从$X$到$Y$上的同胚映射，则称$X$与$Y$同胚。\\
+    设$T$是双映射，且对任意的$x,\ y \in X$，有$\rho_1(Tx, \ Ty)=\rho(x,\ y)$，则称$T$是$X$到$Y$上的\textbf{等距映射}。
+    如果存在一个从$X$到$Y$上的等距映射，则称$X$与$Y$\textbf{等距}。
+\end{newdef}
+\begin{note}
+    两个同胚或等距的距离空间在很多情况下可视为同一。
+\end{note}
+\begin{newex}
+    $y=\arctan x$是$\mathbb R$到$\big( -\dfrac{\pi}{2} , \ \dfrac{\pi}{2}\big)$上的同胚映射 \\
+    $y=e^x$是$\mathbb R$到$(0,\ \infty)$上的同胚映射
+\end{newex}
+\begin{note}
+    \begin{itemize}
+        \item [(i)] 对于非空集合$X$的任意性以及在$X$上定义距离的多样性导致了距离空间的复杂性
+        \item [(ii)] 注意一般距离空间与$\mathbb R^n$相似的一面，更要注意不同的另一面。最重要的是，所有内容都离不开预先给定的距离。
+        \item [(iii)] 因此，如果在一个非空集合中定义了两个或两个以上的距离，应如实地将它们看成两个或两个以上不同的距离空间。
+        由于它们的不同，故其中一个很可能是可分的，而其他的则不是。对于稠密性以及映射的连续性和同胚等，也类似。
+    \end{itemize}    
+\end{note}
